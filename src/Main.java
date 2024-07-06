@@ -73,8 +73,8 @@ public class Main {
         System.out.println("Задача 8");
         int comet = 0;
         int currentYear = 2024;
-        int startPeriod = currentYear-200;
-        int endPeriod = currentYear+100;
+        int startPeriod = currentYear - 200;
+        int endPeriod = currentYear + 100;
         while (comet <= endPeriod) {
             comet = comet + 79;
             if (comet >= startPeriod) {
@@ -82,5 +82,12 @@ public class Main {
             }
         }
 
+        System.out.println("Задача 8 c другим циклом");
+        for (comet = startPeriod; comet <= endPeriod; comet++) {
+            if (comet % 79 == 0) {
+                System.out.println(comet + " году пролетает комета.");
+            }
+        }
     }
 }
+
